@@ -1,20 +1,28 @@
-var nota = 9
-if(nota<=4.99){
-    console.log("Suspés")
+var numero = 21
+let resultat
+if(numero % 3===0 && numero%7===0){
+    resultat = "Es multiple de 3 i 7"
 }
-else if(nota>4.99 && nota<=5.99){
-    console.log("Suficient")
+else if(numero % 7===0){
+    resultat = "Es multiple de 7"
 }
-else if(nota>5.99 && nota<=6.99){
-    console.log("Bé")
-}
-else if(nota>6.99 && nota <=8.99){
-    console.log("Notable")
-}
-else if(nota > 8.99 && nota <=10){
-    console.log("Excel·lent")
+else if(numero%3===0){
+    resultat = "Es multiple de 3"
 }
 else{
-    console.log("Nota no valida")
+    resultat="No es multiple de 3 ni de 7"
 }
-
+switch(resultat){
+    case "Es multiple de 3 i 7":
+        console.log("Es multiple de 3 i 7: " + numero)
+        break
+    case "Es multiple de 3":
+        console.log("Es multiple de 3: " + numero)
+        break
+    case "Es multiple de 7":
+        console.log("Es múltiple de 7: " + numero)
+        break
+    case "No es multiple de 3 ni de 7":
+        console.log("No es multiple de 3 ni de 7: " + numero)
+        break
+} 
