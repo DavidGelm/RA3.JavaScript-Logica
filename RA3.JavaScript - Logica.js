@@ -1,10 +1,12 @@
-let cadena = "hola3pat2ta"
-let suma = 0
-for (let i = 0; i< cadena.length; i++){
-    if (!isNaN(cadena[i]) && cadena[i] !== ''){
-        suma += parseInt(cadena[i])
+const numeros = [3,1,9]
+let contador
+for(let i = 0;i < numeros.length;i++){
+    for(let j = 0;j < numeros.length-i-1; j++){
+        if(numeros[j] < numeros[j+1]){
+            contador = numeros[j]
+            numeros[j] = numeros[j+1]
+            numeros[j+1] = contador
+        }
     }
 }
-
-console.log("La suma dels numeros del string es: " + suma)
-
+console.log("Llista ordenada major a menor: " + numeros)
