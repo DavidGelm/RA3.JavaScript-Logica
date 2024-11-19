@@ -1,10 +1,9 @@
-function patro(n){
-    for(let i = 1;i <= n;i++){
-        let linia = ''
-        for(let j = 1;j<=i;j++){
-            linia += " *"
-        }
-        console.log(linia)
+let suma = 0
+let numero = 1
+do{
+    if(numero %3===0 && numero%5===0){
+        suma+=numero
     }
-}
-patro(5)
+    numero++
+}while(numero<=1000)
+console.log("La suma dels numeros multiples es: " + suma)
