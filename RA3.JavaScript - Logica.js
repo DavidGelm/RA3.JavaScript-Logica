@@ -1,28 +1,10 @@
-var numero = 21
-let resultat
-if(numero % 3===0 && numero%7===0){
-    resultat = "Es multiple de 3 i 7"
+let numero = 15;
+let n = 0;
+let suma = 0;
+
+for (let i = 1; suma + i <= numero; i++) {
+    n = i;
+    suma += i;
 }
-else if(numero % 7===0){
-    resultat = "Es multiple de 7"
-}
-else if(numero%3===0){
-    resultat = "Es multiple de 3"
-}
-else{
-    resultat="No es multiple de 3 ni de 7"
-}
-switch(resultat){
-    case "Es multiple de 3 i 7":
-        console.log("Es multiple de 3 i 7: " + numero)
-        break
-    case "Es multiple de 3":
-        console.log("Es multiple de 3: " + numero)
-        break
-    case "Es multiple de 7":
-        console.log("Es múltiple de 7: " + numero)
-        break
-    case "No es multiple de 3 ni de 7":
-        console.log("No es multiple de 3 ni de 7: " + numero)
-        break
-} 
+
+console.log("El numero maxim es: " + n);
